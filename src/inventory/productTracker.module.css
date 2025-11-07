@@ -1,0 +1,149 @@
+/* 🔲 Modal Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    overflow: hidden;
+}
+
+/* 🪟 Modal Box */
+.modal {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    width: 80%;
+    max-height: 80vh;
+    min-height: 300px; /* ✅ Prevent layout jump */
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', sans-serif;
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ❌ Close Button */
+.closeBtn {
+    margin-top: 20px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.closeBtn:hover {
+    background-color: #c0392b;
+}
+
+/* 📦 Container (legacy inline mode) */
+.container {
+    padding: 24px;
+    background-color: #f4f6f8;
+    border-radius: 12px;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 🧭 Header */
+.header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0078d4;
+    margin-bottom: 16px;
+}
+
+.header span {
+    font-weight: 700;
+    color: #222;
+}
+
+/* 🔄 Status Text */
+.status {
+    font-size: 16px;
+    color: #666;
+    margin-top: 12px;
+    text-align: center;
+}
+
+/* 📊 Table Wrapper */
+.tableWrapper {
+    min-height: 300px; /* ✅ Prevent collapse during loading */
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* 📋 Table */
+.logTable {
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: collapse;
+    table-layout: fixed; /* ✅ Prevent column recalculation */
+}
+
+.logTable th,
+.logTable td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.logTable th {
+    background-color: #f0f2f5;
+    font-weight: 600;
+    color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+/* 🏷️ Status Tags */
+.statusTag {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: white;
+}
+
+.dispatch {
+    background-color: #0078d4;
+}
+
+.return {
+    background-color: #28a745;
+}
+
+.damage {
+    background-color: #dc3545;
+}
+
+.recover {
+    background-color: #ff9800;
+}

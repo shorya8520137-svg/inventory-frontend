@@ -1,0 +1,301 @@
+.container {
+    padding: 24px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Unified control bar for all inputs */
+.controlBar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Search input */
+.searchInput {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 300px;
+    max-width: 100%;
+}
+
+/* Suggestion dropdown styling */
+.suggestionList {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 4px;
+    max-height: 240px;
+    overflow-y: auto;
+    width: 300px;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 14px;
+    list-style: none;
+    padding: 0;
+}
+
+.suggestionList li {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.suggestionList li:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/* Inventory dropdown */
+.dropdown {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 160px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Date input */
+.dateInput {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    min-width: 160px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dateInput:hover,
+.dateInput:focus {
+    border-color: #0078d4;
+    box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.2);
+}
+
+/* Buttons */
+.submitButton {
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #0078d4;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.submitButton:hover {
+    background-color: #005ea2;
+}
+
+/* Upload button */
+.uploadButton {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #ffffff;
+    cursor: pointer;
+    flex: 1;
+    min-width: 160px;
+    color: #333;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.uploadButton:hover {
+    border-color: #0078d4;
+    box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.2);
+}
+
+/* ✅ Scrollable table wrapper */
+.tableWrapper {
+    overflow-x: auto;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+/* Scroll container */
+.scrollBox {
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+/* Inventory table */
+.table {
+    min-width: 1200px;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    white-space: nowrap;
+    word-break: keep-all;
+    vertical-align: middle;
+    color: #333;
+}
+
+.table th {
+    background-color: #f0f0f0;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Emphasize Product column */
+.table td:first-child {
+    font-weight: 600;
+    color: #0078d4;
+}
+
+/* Emphasize Stock column */
+.table td:nth-child(2) {
+    font-weight: 500;
+    color: #1890ff;
+}
+
+/* Dim Return column */
+.table td:last-child {
+    color: #666;
+    font-style: italic;
+}
+
+.noData {
+    padding: 16px;
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.dashboardCard {
+    padding: 20px;
+    background-color: #e6f7ff;
+    border: 1px dashed #91d5ff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 24px;
+}
+
+.dashboardCard:hover {
+    background-color: #bae7ff;
+}
+
+.dashboardCard h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #1890ff;
+}
+
+.dashboardCard p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #595959;
+}
+
+.entryCard {
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-top: 24px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.entryCard h3 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: #0078d4;
+    font-weight: 600;
+}
+
+.entryControls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+/* File Upload */
+.uploadInput {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    min-width: 200px;
+    color: #333;
+}
+
+/* Inventory Dropdown */
+.entryDropdown {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    min-width: 180px;
+}
+
+/* Submit Button */
+.entrySubmit {
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #0078d4;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.entrySubmit:hover {
+    background-color: #005ea2;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 6px 12px;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    background: #888;
+    cursor: not-allowed;
+}

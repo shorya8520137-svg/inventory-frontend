@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://inventory-back-1h07.onrender.com/api/:path*"
+    }
+  ]
+}

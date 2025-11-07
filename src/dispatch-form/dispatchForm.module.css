@@ -1,0 +1,129 @@
+.formContainer {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    max-width: 960px;
+    margin: auto;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-y: auto;
+    max-height: calc(100vh - 60px); /* Prevents vertical overflow */
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.row label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
+}
+
+.row input,
+.row select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.productBlock {
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.addBtn,
+.removeBtn,
+.submitBtn {
+    margin-top: 10px;
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.addBtn {
+    background-color: #0078d4;
+    color: white;
+}
+
+.removeBtn {
+    background-color: #d83b01;
+    color: white;
+}
+
+.submitBtn {
+    background-color: #107c10;
+    color: white;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.addBtn:hover {
+    background-color: #005ea2;
+}
+
+.removeBtn:hover {
+    background-color: #a4262c;
+}
+
+.submitBtn:hover {
+    background-color: #0b6a0b;
+}
+
+.rowGroup {
+    margin-bottom: 15px;
+}
+
+.dimensions {
+    display: flex;
+    gap: 10px;
+}
+
+.dimensions input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.appContainer {
+    display: flex;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 180px;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.mainContent {
+    flex: 1;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

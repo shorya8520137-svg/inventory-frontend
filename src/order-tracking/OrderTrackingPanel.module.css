@@ -1,0 +1,43 @@
+.panel {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin-top: 12px;
+    border-radius: 6px;
+}
+
+.loader {
+    font-style: italic;
+    color: #666;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.timeline {
+    margin-top: 16px;
+}
+
+.timeline ul {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eventStatus {
+    font-weight: 600;
+    color: #0078d4;
+}
+
+.eventTime {
+    font-size: 0.9em;
+    color: #555;
+}

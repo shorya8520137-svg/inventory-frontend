@@ -1,0 +1,111 @@
+.container {
+    padding: 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative; /* ✅ Added to ensure dropdown visibility */
+    overflow: visible;  /* ✅ Prevents clipping of suggestionBox */
+}
+
+/* Header with toggle */
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #f0f4f8;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+}
+
+.cardHeader h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0078d4;
+    margin: 0;
+}
+
+.toggleIcon {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0078d4;
+}
+
+/* Body only visible when open */
+.cardBody {
+    padding: 20px 24px;
+    background-color: #ffffff;
+    border-radius: 0 0 8px 8px;
+    position: relative; /* ✅ Added to anchor dropdown */
+    overflow: visible;  /* ✅ Prevents dropdown clipping */
+}
+
+/* Input row layout */
+.inputRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.inputBox {
+    flex: 1 1 45%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    color: #333;
+    min-width: 200px;
+}
+
+/* Submit button */
+.submitButton {
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #0078d4;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.submitButton:hover {
+    background-color: #005ea2;
+}
+
+/* Suggestion dropdown */
+.searchWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.suggestionBox {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    background: #fff;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: 100%; /* ✅ Ensures dropdown appears below input */
+    left: 0;
+}
+
+.suggestionItem {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.suggestionItem:hover {
+    background-color: #f0f0f0;
+}
